@@ -1,17 +1,35 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+import Header from "./Header.js";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function Footer() {
+  return (
+    <footer className="footer">Copyright 2022 Jelinek development. All rights reserved.</footer>
+  )
+}
+function Content() {
+  return (
+    <div>
+      <h1>Why I want to learn React</h1>
+      <ol>
+        <li>I want to get a job</li>
+        <li>React is more marketable and easier to use than Vue</li>
+        <li>Components are interesting</li>
+      </ol>
+    </div>
+  )
+}
+
+function Page() {
+  return (
+    <div>
+      <Header />
+      <Content />
+      <Footer />
+    </div>
+  )
+}
+
+ReactDOM.render(<Page />, document.getElementById("root"))
