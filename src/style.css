@@ -1,28 +1,31 @@
 .nav-items {
   list-style: none;
   display: flex;
+  color: white;
+  padding: 10px
 }
 
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  background-color: black;
 }
 
-.nav-items>li {
-  padding: 10px;
-  font-family: Tahoma, sans-serif;
-  font-weight: bold;
+.nav--icon {
+  width: 40px;
+  padding: 20px 10px;
 }
 
-.image {
-  width: 200px;
-}
-
-.footer {
-  font-size: 10px;
-}
-
-.font1 {
+.nav--logo_text {
+  color: aqua;
   font-family: 'Inter', sans-serif;
+  margin-right: auto;
+  font-size: 22px
+}
+
+.nav--title {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  margin-right: 10px;
+  font-weight: 600;
 }
